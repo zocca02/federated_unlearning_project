@@ -9,4 +9,6 @@ Project work for the course "Sicurezza dell'Informazione" of the University of B
 
 `mia_analysis_unlearning.ipynb` tests some federated unlearning algorithms (FedEraser, Gradient Ascent unlearning and Knowledge distillation based unlearning) compered with a retrained model. All the methods are tested running a membership inference attack based on LIRA. I further tested every method performing the membership inference attack based on some statistics from the last layer of the CNN used to test also if there was information inside the model that could lead to tell apart the unlearned data from the ones the network never seen.
 
+`unlearning_tests.ipynb` tests different approachs which can show differences in how a model behaves with training, unlearned and never seen data, trying to find if some of them can show if, after running the unlearning algorithm, the model has truly unlearned the data or not.
+
 For all the tests a resnet18 has been used as model and has been trained on CIFAR10. I let the model overfit on purpose to stand out the result of the membership inference attacks.
